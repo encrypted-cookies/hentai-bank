@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Pay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined icon">menu</span>
+        <h1>Max Pay</h1>
+        <div class="right">
+            <span class="material-symbols-outlined icon mode">dark_mode</span>
+            <span class="material-symbols-outlined icon">account_circle</span>
+       </div>
+    </header>
+
+    <div class="dashboard">
+        
+    </div>
+    <script>
+        let mode = document.querySelector('.mode');
+        mode.onclick = ()=>{
+            document.documentElement.classList.toggle('dark');
+            mode.classList.toggle('change');
+            mode.textContent = mode.textContent=='dark_mode'?'light_mode':'dark_mode'
+
+        }
+    </script>
+</body>
+</html>
